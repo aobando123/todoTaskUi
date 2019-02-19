@@ -1,0 +1,13 @@
+<mat-card class="todoCard">
+  <mat-card-title>{{todoTask.category}}</mat-card-title>
+  <mat-card-content >
+    <p>{{todoTask.description}}</p>
+    <ul *ngFor="let subTask of todoTask.subTasks">
+        <li>{{subTask.name}}</li>
+    </ul>
+  </mat-card-content>
+  <mat-card-actions>
+    <button mat-raised-button color="primary">Action</button>
+    <button mat-raised-button color="primary" >Action</button>
+  </mat-card-actions>
+</mat-card>

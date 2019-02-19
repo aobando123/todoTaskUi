@@ -1,16 +1,31 @@
-import { BrowserModule } from '@angular/platform-browser';
-import { NgModule } from '@angular/core';
-
-import { AppComponent } from './app.component';
-
+import { BrowserModule } from "@angular/platform-browser";
+import { NgModule } from "@angular/core";
+import { TodoService } from "./services/todo.service";
+import { AppComponent } from "./app.component";
+import { DashboardComponent } from "./dashboard/dashboard.component";
+import { HttpClientModule } from "@angular/common/http";
+import { NavbarComponent } from "./shared/navbar/navbar.component";
+import { TodoCardComponent } from "./todo-card/todo-card.component";
+import {
+  MatCardModule,
+  MatButtonModule,
+  MatGridListModule
+} from "@angular/material";
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    DashboardComponent,
+    NavbarComponent,
+    TodoCardComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    HttpClientModule,
+    MatCardModule,
+    MatButtonModule,
+    MatGridListModule
   ],
-  providers: [],
+  providers: [TodoService],
   bootstrap: [AppComponent]
 })
-export class AppModule { }
+export class AppModule {}
