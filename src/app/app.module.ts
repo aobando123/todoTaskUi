@@ -9,7 +9,8 @@ import { TodoCardComponent } from "./todo-card/todo-card.component";
 import {
   MatCardModule,
   MatButtonModule,
-  MatGridListModule
+  MatGridListModule,
+  MatToolbarModule
 } from "@angular/material";
 @NgModule({
   declarations: [
@@ -23,7 +24,8 @@ import {
     HttpClientModule,
     MatCardModule,
     MatButtonModule,
-    MatGridListModule
+    MatGridListModule,
+    MatToolbarModule
   ],
   providers: [TodoService],
   bootstrap: [AppComponent]

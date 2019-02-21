@@ -1,5 +1,4 @@
 
-<mat-grid-list class="dashboard" cols="6" >
-  <mat-grid-tile class="tile" *ngFor="let task of taskList"><app-todo-card [todoTask]="task"></app-todo-card></mat-grid-tile>
-
-</mat-grid-list>
+<div class="dashboard">
+    <div class="tile" *ngFor="let task of taskList"><app-todo-card [todoTask]="task"></app-todo-card></div>
+</div>

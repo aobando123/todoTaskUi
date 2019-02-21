@@ -1,5 +1,14 @@
 .todoCard {
-  background-color: #69f0ae;
+  background-color: #009688;
   color: white;
-  min-height: 100%
+  mat-card-actions {
+    margin-bottom: 5px;
+  }
+  button {
+    background-color: #00675b;
+    color: white;
+    &:hover {
+      background-color: #52c7b8;
+    }
+  }
 }

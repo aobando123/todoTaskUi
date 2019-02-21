@@ -1,6 +1,9 @@
 .dashboard {
   margin: 0 auto;
+  display: flex;
+  justify-content: flex-start;
 }
 .tile {
-  padding: 0
+  padding: 0;
+  margin: 10px;
 }
