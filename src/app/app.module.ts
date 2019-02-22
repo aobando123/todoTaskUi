@@ -10,22 +10,31 @@ import {
   MatCardModule,
   MatButtonModule,
   MatGridListModule,
-  MatToolbarModule
+  MatToolbarModule,
+  MatFormFieldModule,
+  MatInputModule
 } from "@angular/material";
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { TaskFormComponent } from './task-form/task-form.component';
 @NgModule({
   declarations: [
     AppComponent,
     DashboardComponent,
     NavbarComponent,
-    TodoCardComponent
+    TodoCardComponent,
+    TaskFormComponent,
   ],
   imports: [
     BrowserModule,
+    BrowserAnimationsModule,
     HttpClientModule,
     MatCardModule,
     MatButtonModule,
     MatGridListModule,
-    MatToolbarModule
+    MatToolbarModule,
+    MatFormFieldModule,
+    MatInputModule,
+
   ],
   providers: [TodoService],
   bootstrap: [AppComponent]
